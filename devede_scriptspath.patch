@@ -1,0 +1,17 @@
+diff -urN devede-3.14.0.orig/devede.py devede-3.14.0/devede.py
+--- devede-3.14.0.orig/devede.py	2009-07-17 00:19:28.000000000 +0200
++++ devede-3.14.0/devede.py	2009-10-23 20:14:38.000000000 +0200
+@@ -80,11 +80,11 @@
+ 
+ 	share_locale="/usr/share/locale"
+ 	glade="/usr/share/devede"
+-	sys.path.append("/usr/lib/devede")
++	sys.path.append("/usr/share/devede/scripts")
+ 	font_path="/usr/share/devede"
+ 	pic_path="/usr/share/devede"
+ 	other_path="/usr/share/devede"
+-	help_path="/usr/share/doc/devede"
++	help_path="/usr/share/doc/devede-3.0.14"
+ 	print "Using package-installed files"
+ 	
+ elif tipo==1:
