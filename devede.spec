@@ -1,5 +1,5 @@
 
-Summary:	Simple gui for dvd authoring.
+Summary:	Simple gui for dvd authoring
 Summary(pl.UTF-8):	Prosty program do tworzenia dvd wideo.
 Name:		devede
 Version:	3.14.0
@@ -10,13 +10,14 @@ Source0:	http://www.rastersoft.com/descargas/%{name}-%{version}.tar.bz2
 # Source0-md5:	f7304e9276862758f6e4aa0bdbd0fc49
 URL:		http://www.rastersoft.com/programas/devede.html
 Patch0:		%{name}_scriptspath.patch
-BuildArch:	noarch
-Requires:	python-pygtk-glade
-Requires:	mplayer
-Requires:	mencoder
+BuildRequires:	rpm-pythonprov
 Requires:	dvdauthor
-Requires:	vcdimager
+Requires:	mencoder
 Requires:	mkisofs
+Requires:	mplayer
+Requires:	python-pygtk-glade
+Requires:	vcdimager
+BuildArch:	noarch
 
 %description
 Simple gui for dvd authoring.
@@ -28,7 +29,7 @@ Prosty program do tworzenia dvd wideo.
 %setup -q %{SOURCE0}
 echo $RPM_BUILD_ROOT
 
-%patch0 -p1 
+%patch0 -p1
 
 %build
 export DESTDIR=$RPM_BUILD_ROOT
@@ -46,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/devede
 %dir %{_datadir}/devede/scripts
 %attr(755,root,video) %{_datadir}/devede/scripts/devede_*.py
-%{_datadir}/applications/devede.desktop
+%{_desktopdir}/devede.desktop
 %{_datadir}/devede/*.ui
 %{_datadir}/devede/*.png
 %{_datadir}/devede/*.mpg
@@ -56,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/devede/languages.lst
 %{_datadir}/devede/silence.mp3
 %{_datadir}/locale/
-%{_datadir}/pixmaps/
+%{_pixmapsdir}/
 %doc %{_docdir}
