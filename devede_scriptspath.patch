@@ -11,7 +11,7 @@ diff -urN devede-3.14.0.orig/devede.py devede-3.14.0/devede.py
  	pic_path="/usr/share/devede"
  	other_path="/usr/share/devede"
 -	help_path="/usr/share/doc/devede"
-+	help_path="/usr/share/doc/devede-3.14.0"
++	help_path="/usr/share/doc/devede-3.16.9"
  	print "Using package-installed files"
  	
  elif tipo==1:

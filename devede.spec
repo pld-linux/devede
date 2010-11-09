@@ -1,13 +1,12 @@
-
-Summary:	Simple gui for dvd authoring
-Summary(pl.UTF-8):	Prosty program do tworzenia dvd wideo.
+Summary:	Simple GUI for DVD/CD authoring
+Summary(pl.UTF-8):	Prosty interfejs do tworzenia filmów DVD/CD
 Name:		devede
-Version:	3.14.0
-Release:	0.1
+Version:	3.16.9
+Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.rastersoft.com/descargas/%{name}-%{version}.tar.bz2
-# Source0-md5:	f7304e9276862758f6e4aa0bdbd0fc49
+# Source0-md5:	f35c5e72264ee272194cfa558b43e598
 URL:		http://www.rastersoft.com/programas/devede.html
 Patch0:		%{name}_scriptspath.patch
 BuildRequires:	rpm-pythonprov
@@ -20,42 +19,45 @@ Requires:	vcdimager
 BuildArch:	noarch
 
 %description
-Simple gui for dvd authoring.
+Simple GUI for DVD/CD authoring.
 
 %description -l pl.UTF-8
-Prosty program do tworzenia dvd wideo.
+Prosty interfejs do tworzenia filmów DVD/CD.
 
 %prep
-%setup -q %{SOURCE0}
-echo $RPM_BUILD_ROOT
-
+%setup -q
 %patch0 -p1
-
-%build
-export DESTDIR=$RPM_BUILD_ROOT
 
 %install
 rm -rf $RPM_BUILD_ROOT
-./install.sh --targeted=yes --prefix $RPM_BUILD_ROOT%{_prefix} --pkglibdir $RPM_BUILD_ROOT%{_datadir}/devede/scripts --pkgdocdir $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
+
+export DESTDIR=$RPM_BUILD_ROOT
+./install.sh --targeted=yes \
+	--prefix %{_prefix} \
+	--pkglibdir %{_datadir}/devede/scripts \
+	--pkgdocdir %{_docdir}/%{name}-%{version}
+rm -f $RPM_BUILD_ROOT%{_bindir}/devede[-_]debug
+
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
+%doc changes.txt docs/*
 %attr(755,root,video) %{_bindir}/devede
 %dir %{_datadir}/devede
 %dir %{_datadir}/devede/scripts
 %attr(755,root,video) %{_datadir}/devede/scripts/devede_*.py
-%{_desktopdir}/devede.desktop
+%{_datadir}/devede/backgrounds
 %{_datadir}/devede/*.ui
 %{_datadir}/devede/*.png
 %{_datadir}/devede/*.mpg
 %{_datadir}/devede/codepages.lst
-%{_datadir}/devede/devedesans.ttf
 %{_datadir}/devede/devede.svg
+%{_datadir}/devede/devedesans.ttf
 %{_datadir}/devede/languages.lst
-%{_datadir}/devede/silence.mp3
-%{_datadir}/locale/
-%{_pixmapsdir}/
-%doc %{_docdir}
+%{_datadir}/devede/silence.ogg
+%{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/%{name}.svg
