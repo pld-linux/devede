@@ -1,5 +1,5 @@
 Summary:	Simple GUI for DVD/CD authoring
-Summary(pl.UTF-8):	Prosty interfejs do tworzenia filmów DVD/CD
+Summary(pl.UTF-8):	Prosty interfejs do tworzenia filmÃ³w DVD/CD
 Name:		devede
 Version:	3.16.9
 Release:	1
@@ -17,12 +17,13 @@ Requires:	mplayer
 Requires:	python-pygtk-glade
 Requires:	vcdimager
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Simple GUI for DVD/CD authoring.
 
 %description -l pl.UTF-8
-Prosty interfejs do tworzenia filmów DVD/CD.
+Prosty interfejs do tworzenia filmÃ³w DVD/CD.
 
 %prep
 %setup -q
