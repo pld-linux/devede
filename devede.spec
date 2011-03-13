@@ -2,7 +2,7 @@ Summary:	Simple GUI for DVD/CD authoring
 Summary(pl.UTF-8):	Prosty interfejs do tworzenia filmów DVD/CD
 Name:		devede
 Version:	3.16.9
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.rastersoft.com/descargas/%{name}-%{version}.tar.bz2
@@ -38,6 +38,12 @@ export DESTDIR=$RPM_BUILD_ROOT
 	--pkglibdir %{_datadir}/devede/scripts \
 	--pkgdocdir %{_docdir}/%{name}-%{version}
 rm -f $RPM_BUILD_ROOT%{_bindir}/devede[-_]debug
+
+mv $RPM_BUILD_ROOT%{_datadir}/locale/{de_DE,de}
+mv $RPM_BUILD_ROOT%{_datadir}/locale/{hu_HU,hu}
+mv $RPM_BUILD_ROOT%{_datadir}/locale/{it_IT,it}
+mv $RPM_BUILD_ROOT%{_datadir}/locale/{nb_NO,nb}
+mv $RPM_BUILD_ROOT%{_datadir}/locale/{pt_PT,pt}
 
 %find_lang %{name}
 
