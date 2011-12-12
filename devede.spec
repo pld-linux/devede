@@ -1,12 +1,12 @@
 Summary:	Simple GUI for DVD/CD authoring
 Summary(pl.UTF-8):	Prosty interfejs do tworzenia filmów DVD/CD
 Name:		devede
-Version:	3.16.9
-Release:	2
+Version:	3.20.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.rastersoft.com/descargas/%{name}-%{version}.tar.bz2
-# Source0-md5:	f35c5e72264ee272194cfa558b43e598
+# Source0-md5:	1f98cab95272277a3b78a8e53664880c
 URL:		http://www.rastersoft.com/programas/devede.html
 Patch0:		%{name}_scriptspath.patch
 BuildRequires:	rpm-pythonprov
@@ -26,7 +26,7 @@ Simple GUI for DVD/CD authoring.
 Prosty interfejs do tworzenia filmów DVD/CD.
 
 %prep
-%setup -q
+%setup -q -n %{name}
 %patch0 -p1
 
 %install
