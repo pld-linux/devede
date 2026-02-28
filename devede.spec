@@ -2,7 +2,7 @@ Summary:	Simple GUI for DVD/CD authoring
 Summary(pl.UTF-8):	Prosty interfejs do tworzenia filmów DVD/CD
 Name:		devede
 Version:	3.20.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.rastersoft.com/descargas/%{name}-%{version}.tar.bz2
