@@ -1,0 +1,189 @@
+diff -urN devede.orig/devede_bincue.py devede/devede_bincue.py
+--- devede.orig/devede_bincue.py	2011-05-18 22:30:21.000000000 +0200
++++ devede/devede_bincue.py	2026-05-21 01:12:29.311572242 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_convert.py devede/devede_convert.py
+--- devede.orig/devede_convert.py	2011-12-08 03:09:19.000000000 +0100
++++ devede/devede_convert.py	2026-05-21 01:12:29.343341938 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+ # Copyright 2006-2009 (C) Peter Gill - win32 parts
+diff -urN devede.orig/devede_delete.py devede/devede_delete.py
+--- devede.orig/devede_delete.py	2010-02-02 00:20:29.000000000 +0100
++++ devede/devede_delete.py	2026-05-21 01:12:29.326145773 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2007 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_dialogs.py devede/devede_dialogs.py
+--- devede.orig/devede_dialogs.py	2009-04-19 16:55:42.000000000 +0200
++++ devede/devede_dialogs.py	2026-05-21 01:12:29.319938900 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2007 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_disctype.py devede/devede_disctype.py
+--- devede.orig/devede_disctype.py	2011-12-06 22:48:27.000000000 +0100
++++ devede/devede_disctype.py	2026-05-21 01:12:29.309432327 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_dvdmenu.py devede/devede_dvdmenu.py
+--- devede.orig/devede_dvdmenu.py	2011-12-06 22:54:06.000000000 +0100
++++ devede/devede_dvdmenu.py	2026-05-21 01:12:29.328290599 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_dvd.py devede/devede_dvd.py
+--- devede.orig/devede_dvd.py	2011-05-18 22:35:14.000000000 +0200
++++ devede/devede_dvd.py	2026-05-21 01:12:29.317581430 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2007 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_executor.py devede/devede_executor.py
+--- devede.orig/devede_executor.py	2011-11-26 14:51:25.000000000 +0100
++++ devede/devede_executor.py	2026-05-21 01:12:29.313637972 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_ffmpeg_convert.py devede/devede_ffmpeg_convert.py
+--- devede.orig/devede_ffmpeg_convert.py	2011-11-26 22:16:44.000000000 +0100
++++ devede/devede_ffmpeg_convert.py	2026-05-21 01:12:29.336932611 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_fonts.py devede/devede_fonts.py
+--- devede.orig/devede_fonts.py	2009-12-23 00:54:18.000000000 +0100
++++ devede/devede_fonts.py	2026-05-21 01:12:29.300344685 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_help.py devede/devede_help.py
+--- devede.orig/devede_help.py	2011-11-22 16:34:00.000000000 +0100
++++ devede/devede_help.py	2026-05-21 01:12:29.345658788 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2007 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_loadsave.py devede/devede_loadsave.py
+--- devede.orig/devede_loadsave.py	2011-12-08 13:04:00.000000000 +0100
++++ devede/devede_loadsave.py	2026-05-21 01:12:29.334907955 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_main.py devede/devede_main.py
+--- devede.orig/devede_main.py	2011-11-25 23:30:42.000000000 +0100
++++ devede/devede_main.py	2026-05-21 01:12:29.302589963 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_newfiles.py devede/devede_newfiles.py
+--- devede.orig/devede_newfiles.py	2011-12-08 03:33:01.000000000 +0100
++++ devede/devede_newfiles.py	2026-05-21 01:12:29.341098142 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_other.py devede/devede_other.py
+--- devede.orig/devede_other.py	2011-11-19 23:54:37.000000000 +0100
++++ devede/devede_other.py	2026-05-21 01:12:29.304774680 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede.py devede/devede.py
+--- devede.orig/devede.py	2011-12-08 13:22:47.000000000 +0100
++++ devede/devede.py	2026-05-21 01:12:29.338959494 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_settings.py devede/devede_settings.py
+--- devede.orig/devede_settings.py	2011-11-19 22:33:20.000000000 +0100
++++ devede/devede_settings.py	2026-05-21 01:12:29.332936484 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2011 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_subtitles.py devede/devede_subtitles.py
+--- devede.orig/devede_subtitles.py	2011-11-26 12:29:09.000000000 +0100
++++ devede/devede_subtitles.py	2026-05-21 01:12:29.322020693 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ 
+diff -urN devede.orig/devede_title_properties.py devede/devede_title_properties.py
+--- devede.orig/devede_title_properties.py	2010-03-18 23:25:21.000000000 +0100
++++ devede/devede_title_properties.py	2026-05-21 01:12:29.324051076 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2007 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_video_convert.py devede/devede_video_convert.py
+--- devede.orig/devede_video_convert.py	2011-12-08 13:20:04.000000000 +0100
++++ devede/devede_video_convert.py	2026-05-21 01:12:29.306945375 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)
+diff -urN devede.orig/devede_xml_menu.py devede/devede_xml_menu.py
+--- devede.orig/devede_xml_menu.py	2011-12-08 01:59:43.000000000 +0100
++++ devede/devede_xml_menu.py	2026-05-21 01:12:29.330552292 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2
+ # -*- coding: UTF-8 -*-
+ 
+ # Copyright 2006-2009 (C) Raster Software Vigo (Sergio Costas)

@@ -2,13 +2,14 @@ Summary:	Simple GUI for DVD/CD authoring
 Summary(pl.UTF-8):	Prosty interfejs do tworzenia filmów DVD/CD
 Name:		devede
 Version:	3.20.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.rastersoft.com/descargas/%{name}-%{version}.tar.bz2
 # Source0-md5:	1f98cab95272277a3b78a8e53664880c
 URL:		http://www.rastersoft.com/programas/devede.html
 Patch0:		%{name}_scriptspath.patch
+Patch1:		%{name}-python2.patch
 BuildRequires:	rpm-pythonprov
 Requires:	dvdauthor
 Requires:	mencoder
@@ -28,6 +29,7 @@ Prosty interfejs do tworzenia filmów DVD/CD.
 %prep
 %setup -q -n %{name}
 %patch -P0 -p1
+%patch -P1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -36,7 +38,8 @@ export DESTDIR=$RPM_BUILD_ROOT
 ./install.sh --targeted=yes \
 	--prefix %{_prefix} \
 	--pkglibdir %{_datadir}/devede/scripts \
-	--pkgdocdir %{_docdir}/%{name}-%{version}
+	--pkgdocdir %{_docdir}/%{name}-%{version}-install
+rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}-install
 rm -f $RPM_BUILD_ROOT%{_bindir}/devede[-_]debug
 
 mv $RPM_BUILD_ROOT%{_datadir}/locale/{de_DE,de}
